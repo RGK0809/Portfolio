@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sectionRevealMap = {
         'about':     { selectors: ['.section-label','.section-heading','.terminal-window','.about-content','.about-tags span'], type: 'reveal-left' },
         'services':  { selectors: ['.section-label','.section-heading','.service-card'], type: 'reveal-zoom' },
-        'experience':{ selectors: ['.section-label','.section-heading','.exp-card'], type: 'reveal-flip' },
+        'experience':{ selectors: ['.section-label','.section-heading','.exp-subtitle','.timeline-item'], type: 'reveal-flip' },
         'projects':  { selectors: ['.section-label','.section-heading','.bento-card'], type: 'reveal-rotate' },
         'skills':    { selectors: ['.section-label','.section-heading','.skill-group'], type: 'reveal-right' },
         'education': { selectors: ['.section-label','.section-heading','.edu-degree','.cert-item'], type: 'reveal-down' },
@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ─────────────────────── CARD TILT EFFECT ─────────────────────── */
     if (window.innerWidth > 1024) {
         const tiltCards = document.querySelectorAll(
-            '.service-card, .exp-card, .bento-card, .cert-item, .contact-tile'
+            '.service-card, .tl-card, .bento-card, .cert-item, .contact-tile'
         );
         tiltCards.forEach(card => {
             card.addEventListener('mousemove', e => {
