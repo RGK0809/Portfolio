@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramisetti Karthikeya | Electronics & Instrumentation Engineer</title>
+    <meta name="description" content="Portfolio of Ramisetti Karthikeya – Electronics & Instrumentation Engineer specializing in IoT, Embedded Systems, Signal Processing, and Biomedical Engineering.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>RK<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-fade-up">
+                <span class="status-dot"></span> Open to opportunities
+            </div>
+            <h1 class="hero-name animate-fade-up delay-1">
+                Ramisetti<br><span class="gradient-text">Karthikeya</span>
+            </h1>
+            <p class="hero-title animate-fade-up delay-2">
+                Electronics & Instrumentation Engineer
+            </p>
+            <p class="hero-subtitle animate-fade-up delay-3">
+                Building intelligent systems at the intersection of 
+                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </p>
+            <div class="hero-actions animate-fade-up delay-4">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="https://github.com/RGK0809" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/karthikeya-ramesetti-179abb280" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="hero-stats animate-fade-up delay-5">
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Research Internships</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span>
+                    <span class="stat-label">Premier Institutes</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator animate-fade-up delay-5">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════ ABOUT SECTION ═══════════════ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-lead">
+                        I'm an <strong>Electronics & Instrumentation Engineer</strong> driven by the vision of merging hardware intelligence with cutting-edge software to solve real-world problems.
+                    </p>
+                    <p>
+                        My journey spans across <strong>IoT & embedded systems</strong>, <strong>industrial automation</strong>, and <strong>biomedical signal processing</strong>. I've had the privilege of interning at India's top research institutions &mdash; <strong>IIT Bhubaneswar</strong>, <strong>NIT Warangal</strong>, and <strong>IISc Bangalore</strong> &mdash; where I designed smart automation prototypes, programmed industrial PLCs, and explored brain-computer interfaces.
+                    </p>
+                    <p>
+                        Currently, I'm building an <strong>fNIRS analysis pipeline</strong> that extracts hemodynamic brain signals from a consumer-grade Muse S headband, applying the Modified Beer-Lambert Law, wavelet denoising, and advanced artifact correction &mdash; making neuroscience research more accessible.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-microchip"></i>
+                            <span>IoT & Embedded</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-brain"></i>
+                            <span>Biomedical Engineering</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-industry"></i>
+                            <span>Industrial Automation</span>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-wave-square"></i>
+                            <span>Signal Processing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">karthikeya@portfolio ~ </span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span> cat about.json
+                            </div>
+                            <pre class="terminal-output">{
+  "name": "Ramisetti Karthikeya",
+  "role": "E&I Engineer",
+  "location": "India",
+  "interests": [
+    "Brain-Computer Interfaces",
+    "IoT Systems",
+    "Signal Processing",
+    "Automation"
+  ],
+  "currently": "Building fNIRS pipeline",
+  "philosophy": "Make complex tech accessible"
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EXPERIENCE SECTION ═══════════════ -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Research & Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <!-- IISc -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-badge">Current</div>
+                        <h3>Project Engineering Intern</h3>
+                        <h4><i class="fas fa-building"></i> Indian Institute of Science (IISc), Bangalore</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> 2025 – Present</span>
+                        <ul class="timeline-details">
+                            <li>Engaged in advanced project engineering research at one of India's most prestigious research institutions</li>
+                            <li>Working on cutting-edge engineering projects combining instrumentation and computational methods</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Research</span><span>Engineering</span><span>IISc Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IIT Bhubaneswar -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Intern – AI, IoT & Automation</h3>
+                        <h4><i class="fas fa-building"></i> IIT Bhubaneswar, Odisha</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> May 2025 – Jul 2025</span>
+                        <ul class="timeline-details">
+                            <li>Designed and implemented <strong>3+ IoT automation prototypes</strong> using ESP8266/ESP32 modules</li>
+                            <li>Integrated multi-sensor arrays (DHT11, PIR, LDR, current & voltage sensors) with cloud platforms via <strong>MQTT/Blynk</strong></li>
+                            <li>Achieved real-time remote monitoring with <strong>sub-2-second latency</strong></li>
+                            <li>Reduced manual intervention by an estimated <strong>60%</strong> in lab test scenarios</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>ESP32</span><span>IoT</span><span>MQTT</span><span>AI</span><span>Sensors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIT Warangal -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Research Intern – Automation & Control Systems</h3>
+                        <h4><i class="fas fa-building"></i> NIT Warangal (CCPD), Telangana</h4>
+                        <span class="timeline-date"><i class="far fa-calendar"></i> May 2024 – Jun 2024</span>
+                        <ul class="timeline-details">
+                            <li>Programmed <strong>5+ PLC ladder logic sequences</strong> for industrial automation control</li>
+                            <li>Designed relay-based power switching circuits with integrated <strong>overcurrent protection</strong></li>
+                            <li>Gained certified proficiency in PLC programming and power circuit design</li>
+                            <li>Engineered power management circuits with protection relays for safe multi-load operation</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PLC</span><span>Ladder Logic</span><span>Relay Circuits</span><span>SCADA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PROJECTS SECTION ═══════════════ -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- fNIRS Project -->
+                <div class="project-card featured">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RGK0809" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-featured-badge">
+                        <i class="fas fa-star"></i> Featured Project
+                    </div>
+                    <h3>fNIRS Brain Hemodynamic Analysis Pipeline</h3>
+                    <p>
+                        Built a comprehensive <strong>3000+ line Python pipeline</strong> that extracts fNIRS-like hemoglobin concentration data (HbO/HbR) from Muse S consumer headband optical sensors. Implements Modified Beer-Lambert Law, TDDR motion correction, wavelet denoising, short-separation regression, and bootstrap confidence intervals.
+                    </p>
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <span class="metric-value">3000+</span>
+                            <span class="metric-label">Lines of Code</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">92/100</span>
+                            <span class="metric-label">Signal Processing Score</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">10+</span>
+                            <span class="metric-label">Sessions Analyzed</span>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Python</span><span>NumPy</span><span>SciPy</span><span>Pandas</span>
+                        <span>Matplotlib</span><span>Signal Processing</span><span>MBLL</span><span>Wavelet</span>
+                    </div>
+                </div>
+
+                <!-- IoT Smart Home -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RGK0809" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>IoT Smart Home Automation System</h3>
+                    <p>
+                        Full-stack IoT system integrating 4 sensor types (temperature, motion, light, power) with ESP32 microcontroller. Features real-time cloud monitoring dashboard with sub-2-second latency via MQTT protocol and Blynk platform.
+                    </p>
+                    <div class="project-tech">
+                        <span>ESP32</span><span>DHT11</span><span>PIR</span><span>MQTT</span>
+                        <span>Blynk</span><span>C++</span><span>IoT</span>
+                    </div>
+                </div>
+
+                <!-- PLC Automation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RGK0809" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>PLC-Based Industrial Process Automation</h3>
+                    <p>
+                        Programmed and validated 5+ PLC ladder logic sequences for sequential automation control using Siemens PLCs. Designed relay-based power switching circuits with integrated overcurrent protection mechanisms.
+                    </p>
+                    <div class="project-tech">
+                        <span>Siemens PLC</span><span>Ladder Logic</span><span>Relay Circuits</span>
+                        <span>SCADA</span><span>Process Control</span>
+                    </div>
+                </div>
+
+                <!-- Sensor Interfacing -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/RGK0809" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Multi-Sensor Data Acquisition System</h3>
+                    <p>
+                        Engineered a versatile data acquisition system interfacing DHT11, PIR, LDR, current and voltage sensors with ESP8266/ESP32 platforms. Real-time data visualization with cloud-based dashboards for remote monitoring.
+                    </p>
+                    <div class="project-tech">
+                        <span>ESP8266</span><span>Arduino</span><span>Sensors</span>
+                        <span>Data Acquisition</span><span>Cloud IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ SKILLS SECTION ═══════════════ -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Embedded C/C++</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PLC Ladder Logic</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>IoT & Embedded</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">ESP32 / ESP8266</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Arduino</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MQTT / Blynk</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Sensor Interfacing</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-wave-square"></i>
+                    </div>
+                    <h3>Signal Processing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">fNIRS Analysis</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">NumPy / SciPy</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Pandas / Matplotlib</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Wavelet / Filter Design</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Instrumentation</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">PLC (Siemens)</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SCADA Basics</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Process Control</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Circuit Design</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ EDUCATION SECTION ═══════════════ -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h3>B.Tech – Electronics & Instrumentation Engineering</h3>
+                        <h4>Adikavi Nannaya University</h4>
+                        <span class="edu-date">Graduating 2026</span>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3 class="cert-title"><i class="fas fa-certificate"></i> Certifications & Achievements</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>Project Engineering Internship</h4>
+                                <p>Indian Institute of Science, Bangalore</p>
+                                <span>2025 – Present</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>Research Internship Certificate</h4>
+                                <p>IIT Bhubaneswar</p>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon"><i class="fas fa-award"></i></div>
+                            <div class="cert-info">
+                                <h4>Research Internship Certificate</h4>
+                                <p>NIT Warangal / CCPD</p>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT SECTION ═══════════════ -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="contact-lead">
+                        I'm actively seeking opportunities in <strong>Electronics, IoT, Embedded Systems,</strong> and <strong>Biomedical Engineering</strong>. Let's build something amazing together.
+                    </p>
+                    <div class="contact-cards">
+                        <a href="mailto:ramesettikarthikeya@gmail.com" class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">ramesettikarthikeya@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919177947293" class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+91 9177947293</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karthikeya-ramesetti-179abb280" target="_blank" class="contact-card">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <span class="contact-value">karthikeya-ramesetti</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/RGK0809" target="_blank" class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="contact-label">GitHub</span>
+                                <span class="contact-value">RGK0809</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ramisetti Karthikeya. Crafted with passion & precision.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/RGK0809" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/karthikeya-ramesetti-179abb280" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ramesettikarthikeya@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
