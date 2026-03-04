@@ -109,21 +109,35 @@ document.addEventListener('DOMContentLoaded', () => {
         })();
     }
 
-    /* ─────────────────────── SCROLL REVEAL ─────────────────────── */
+    /* ─────────────────────── SCROLL REVEAL (UNIQUE PER SECTION) ── */
     const revealEls = [];
 
-    // Tag elements that should animate in on scroll
-    const revealSelectors = [
-        '.section-label', '.section-heading', '.about-layout',
-        '.terminal-window', '.about-content', '.service-card',
-        '.exp-card', '.bento-card', '.skill-group', '.edu-degree',
-        '.cert-item', '.contact-tile', '.contact-form-box',
-        '.contact-subtitle', '.hero-stats-bar'
-    ];
-    revealSelectors.forEach(sel => {
-        document.querySelectorAll(sel).forEach(el => {
-            el.classList.add('reveal');
-            revealEls.push(el);
+    // Each section gets a DIFFERENT entrance animation
+    const sectionRevealMap = {
+        'about':     { selectors: ['.section-label','.section-heading','.terminal-window','.about-content','.about-tags span'], type: 'reveal-left' },
+        'services':  { selectors: ['.section-label','.section-heading','.service-card'], type: 'reveal-zoom' },
+        'experience':{ selectors: ['.section-label','.section-heading','.exp-card'], type: 'reveal-flip' },
+        'projects':  { selectors: ['.section-label','.section-heading','.bento-card'], type: 'reveal-rotate' },
+        'skills':    { selectors: ['.section-label','.section-heading','.skill-group'], type: 'reveal-right' },
+        'education': { selectors: ['.section-label','.section-heading','.edu-degree','.cert-item'], type: 'reveal-down' },
+        'contact':   { selectors: ['.section-label','.section-heading','.contact-subtitle','.contact-tile','.contact-form-box'], type: 'reveal-glow' }
+    };
+
+    // Also animate hero stats with default slide-up
+    document.querySelectorAll('.hero-stats-bar').forEach(el => {
+        el.classList.add('reveal', 'reveal-up');
+        revealEls.push(el);
+    });
+
+    // Apply per-section reveal types
+    Object.entries(sectionRevealMap).forEach(([sectionId, config]) => {
+        const section = document.getElementById(sectionId);
+        if (!section) return;
+        config.selectors.forEach(sel => {
+            section.querySelectorAll(sel).forEach(el => {
+                el.classList.add('reveal', config.type);
+                revealEls.push(el);
+            });
         });
     });
 
